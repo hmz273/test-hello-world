@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+            <!-- Header Start -->
+            <div class="container bg-dark px-0">
+              <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="83" viewBox="0 0 136 83">
+                    <image id="logo_immo-maroc" width="136" height="83" xlink:href="data:image/png;base64,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"/>
+                  </svg>
+                  </a>
+                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">                        
+                        <p class="pt-3 text-end">+212524433200 / +212669290290<br/>
+                           contact@immo-maroc.com</p>
+                      </li>
+                      <span class="p-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="59" viewBox="0 0 36 59">
+                        <image id="Layer_1" data-name="Layer 1" width="36" height="59" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAA7CAYAAAATgCjWAAAABHNCSVQICAgIfAhkiAAAArlJREFUaEPtmb9OVFEQxhdQQBOspCGhsyEhNhhQCol/iBYWAjYWVsTC2soH8AlUQsIbQABtLBTMokL0IQhqYYKFUSkIAZTvR86YlXWZc3cvuxTnJF/2z5w7891v5p6bzDQVCoWbQo/wR/gtNAn1WC0hJnFPCvxeIPiyMFgPBhExJiG0JFwO6vwKrCOurXkLsclIq3BaaBae8OeCcC18jjeAEGRmhPPCUwi9Fq4Lc8JYzfddnYMVXXZJeAahN8IVYV4Yrc5fTVdRzO9KCS3qx1XhhXA70vWA9j0WTgjUwcG1qz/uC58i/OEDQhdNIauh5/pjJMIBWx4IE85eAnyM8FeRUJaU9SnQQwG5UYizhMUnAXaER8KXehGKiBO9JReFoqNFbEyEPJGSQkkhTwHPnmooKeQp4NlTDSWFPAU8e6qhpJCngGdPNZQU8hTw7KmGkkKeAp491VBSyFPAs+fSQfOCZLHTNKelR5twv+lZTUsvS0BvL124twLN+38INaotXDFljSJUljJrC3+WZJMCLd2jHMCQojWB7j2x2oT3wgVLWVFfhrxE52ynO9srbAgoBKF+I2SdfFq5P3MOXMkd/WumBlv/I2RPGam7GzwcZcrwvSkweWIxDeKx/6vQK/0YFo5NUZtCWTr5lgru9pzQITDv+ibEdO9LU5nr2/6sPDOR7BZsOnlD33l6YleuhLoUdVVoD9Ff6pOJ0nYsG+0rI2TnUDU1dCoUo42oIPc1Axm2lhGyieKsjHcyOstr+wc5Knu5ch7dEzhJYxY1w939CKCoS5cNeZmpUmtWV4ywsNlIi4NxWmDktf9yLQqc1ByM30MQjxDXAc6Q9YBKhM7ITtFDyGZr3LQRhBBPKWsCpyaXR6Ie9ikI3RJ4r1hhHrzTw4iwl5cyxUz6SIOlAt+o0CkwAj/sKCA2vop7WRwIslqNi5sAAAAASUVORK5CYII="/>
+                      </svg>
+                    </span>
+                    </ul>
+                    <span class="p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="58" viewBox="0 0 2 58">
+                      <rect id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" width="2" height="58" opacity="0.2"/>
+                    </svg>
+                  </span>        
+                    <div class="text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+                        <image id="Layer_18" data-name="Layer 18" width="34" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABHNCSVQICAgIfAhkiAAABPZJREFUWEetmAvMl1Mcx72ScjdRmttModxXCiUJNdFEF2NKDBtFK2vCrK11tWqZy96V60ihVUoU4bWS1YyMJvfWRVNUZmXuPp9357TzPj3/S0/vb/vseZ5ze77/c37nd37Pv6bZ4P4H7IO1oO3ZcAmcByfDSXA4bINN8B18DKtgLfxVzfg1VQo5gcFuhT7QAZpWMfh22qyEOfAa/FmuTyUhB9H5ThgFpyYDOagvcga8/g3NoRUo+iioCe3/CYIe5rq8lJhyQk6k03Tol3T+mvu34Q34BFyO1BTucnWB6+ByOCY0+J3reJgCf2QFlRKiH7wI54cOO4Ioy34o9atyyi+i7F64Oal7hvvhsCttnyekDQ3mg2I013kk6HxFrAmdBsOjcGwY4Dmud4FLWm9ZIa7tQugW6r2/A7JLUESQyzULTgmdx3IdU0rIJCoeCJXLuA4El6WxzKVaADq1ftIb3svOSEcKPgIdTj+4IlxTEUfzcCC4U4raTXR8KYyjw18Ku+PSuNX0Cz39P7gFXs686QaeR8PB4HZ+p6ASf8hMuD286x6utVHIBTzUwZHg9rwW0oh4Ds8uVcvw8qVcndZ/C4o5l35LoDV8AH2ikHE8GHAMPs6G0TCas+Xed+dEU2Rn+LSgELsZCnyX8aWHQg7hZhHoE1/CVbA5eUEz7ueCs5SaW9DpLWp96Wjo1ydHK8S44XIYwvUTfSE1feIVsGNqbm19qqi5zJ+D17kKcYrrwLNisupyRnbPP5KUO3MKXldURei3muuFsEYhLoUzog2Fp3IG98jXWWNknMj9Q/spwu66hEu+RSHeWKANAvd4nvnyOFv60JWwvzPiprgRflVIL27cStrdUFtCiMmPUdCp1D6EaxykRPtqivVJfW+bQi7mpg50ygbxP2cko6+zd3yoezOI35Bpa9pnjPFFBshS5o8x21urkDO5MUqafzhVhuBydj2Vz4PBT9NxjUEK9DTViWeHOk/uJ0JdNkPzuPgCTKQWK8QBF0NXWAOu/S8VxJgsPQ0Opvmr3wKjpIHPQy21F3gYkinrEfq4EuNiZDUTM1kxyg0IwipoqQ98j0G7Sg2prwOztdQe52EYGKV7RyHdeXC9jbJOa5pRlXuPy+kBaOITZyevvUmQB10008l3wWDqMdEzCjHMuiM8klV4dWhYTkRa15YHfcsdqM/FPPUb7mfAVEiddgLPD4YyA+X4NEPrSYFh27PFvMSp3CvJraDsUOoNfmeAOan5ht85qV3Gw+tgNvg9uGu3pkJ0sK9CA9P+7lD0mC+l1zTRjXFWaDCEq47cIGe9jednQwMzb7ddY5p+of8ZNzQF+M76JUtnxGTH5dkJncD1bSzT954EEyzNbW682ZNyRiGnU7gCjgMTFnfBYaAT6riG9XmB3fugzgzML8X7IQZAN4Vn2o/pOFHIfRQaE5wml2Q9mAr6Sww40TyBXwUj5reQ58xuY3eOs2sG5o+J5nK43ff6PFFImoEpxFBsWTnzbFHsxjCofdwxzoC+cBrELew4tvf09isv998BhbSn8n2IibEdHdgPbA8lZ0C/MSgZTeOBV0Frff6rWL8GPNEbLEW2s0JGUDgNPLA+Az8tXQJ9JjuFTrlnkeeSW1HxR4B/U7hMCt4CfqzrC0bPnysptl4h+oSDGGSMIz9V05E2Zmv6g8eC37dOuUHMA/O3KsfY0+x/eOghHTs4y6YAAAAASUVORK5CYII="/>
+                      </svg> 
+                      <span class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="58" viewBox="0 0 2 58">
+                          <rect id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" width="2" height="58" opacity="0.2"/>
+                        </svg>
+                      </span>
+                                           
+                      <i class="fab fa-facebook-f">aaaa</i>
+                      <i class="fab fa-facebook-f">|</i>
+                      <i class="fab fa-twitter">aaaa</i>
+                      <i class="fab fa-facebook-f">|</i>
+                      <i class="fab fa-linkedin-in">aaaa</i>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+                                        
+              <div class="bg-light">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Immobilier Marrakech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Vente Villa de luxe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Immobilier prestige Marrakech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark">Agence Immobilier maroc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark">Vente apparetementes de luxe Marrakech</a>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-light">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"><h6>Accueil</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"><h6>Notre Agence</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"><h6>Vendre/Louer</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark"><h6>Newsletter</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark"><h6>Alert e-mail</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark"><h6>Contact</h6></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Header End -->
+  
+  
+          <!-- Carousel Start -->
+          <div class="container-fluid p-0 mb-5">
+              <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img class="w-100" src="./img/carousel-1.jpg" alt="Image">
+                          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                              <div class="p-3" style="max-width: 700px;">
+                                  <h1 class="display-3 text-white mb-4 animated slideInDown">Immo Maroc</h1>
+                                  <h3>Immobilier de prestige de puis 2002</h3>
+                                  <h2>Villas et apparetementes de luxe a Marrakech</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Carousel End -->
+  
+  
+          <!-- Booking Start -->
+          <div class="container booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="bg-light me-5 ms-5">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"><h6 class="brown">VENTE</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"><h6>LOCATION ANNUELLE</h6></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"><h6>LOCATION SAISONNIÈRE</h6></a>
+                </li>
+              </ul>
+            </div>
+              <div class="container">
+                  <div class="bg-white shadow" style="padding: 35px;">
+                      <div class="row g-2">
+                          <div class="col-md-10">
+                              <div class="row g-2">
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected >Type de bien</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Secteur</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                                  <div class="col-md-3">
+                                      <select class="form-select">
+                                          <option selected>Prix</option>
+                                          <option value="1">Option 1</option>
+                                          <option value="2">Option 2</option>
+                                          <option value="3">Option 3</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <select class="form-select">
+                                          <option selected>Genre</option>
+                                          <option value="1">Option 1</option>
+                                          <option value="2">Option 2</option>
+                                          <option value="3">Option 3</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-2">
+                              <button class="btn btn-warning text-light w-100">Rechercher</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container">
+            <h1 class="text-center p-4 m-4"><span class="brown">Nouveautés</span> en vente</h1>
+            <div class="row">
+              <div class="col-3">
+                <div class="card h-100">
+                  <img class="w-100" src="./img/carousel-1.jpg" alt="Image">
+                  <div class="card-body">
+                    <h6 class="card-title brown">129,390£ / 1,400,000 DH</h6>
+                    <h5 class="card-title">Marocain épuiré</h5>
+                    <p class="card-text">Appartement 2 chambres 91 m2 a vendre à Marrakech</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="text-center">
+                      <span class="brown">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="24" viewBox="0 0 30 24">
+                        <image id="Layer_5" data-name="Layer 5" width="30" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAABHNCSVQICAgIfAhkiAAAAdxJREFUSEvllssrRVEUh+8lj0ge5TE3NzRA3YHCGANJGZmLQjIzoZQkisTIP2BCRndgJiKvvCLK4BaSQgjfT/vqON1z7nmIgVVfZ5/22vu31j57r32iazP9i5FIpBKiYDXr+xsd74YXnlkp/G3DXV9vogif4DIOpx5GluAzD91w7sE/lYsS6pXwNo0WUADprACHQ6iFs3TOLv1zSeEOnHY8TFSBzxHUwK4HfyeXBb/Cxcw0BQNw8ZvCIbS+DfWd8f8TLiTlYRiBqxDp+15q7epjqAp5nGb97upSBA9gHe5Mxhk84zBtWYEY7Xbzrop3D/kgX1ksiPA+A1fg2iKkQFR6k1ZPoxNUanOgDZYhAapcCb/C5Qzagmq4tAi5NSWkctwEKj6fFlRYGSlzL6YNqbLcDJt2YS2Fvl060yWxBz8iLMEeI2y/Gl9NJJk8tUnKYBXqTADpAlW/Y8ZxOnVMtBHsVmQEb02HdqXu4gbwejs5CucxSTbYs1WGY/AEQ5aItAoPDoGmWgFHYbflmqDzEXQbBbVAwpNGuC+oqts3dpvzT4VV7gZDZJzLWJ2cVthIzqMC4jan/jb0jUZDCOs/bQka/Qjrb7ILno1wcudrx8vsJyFVfPJRHVDl+iqZHx8dqLyvfxxDAAAAAElFTkSuQmCC"/>
+                      </svg> 91M</span>
+                      <span class="p-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1" height="39" viewBox="0 0 1 39">
+                        <rect id="Rectangle_6" data-name="Rectangle 6" width="1" height="39" fill="#c5b7a8"/>
+                      </svg></span>
+
+                      <span class="brown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="24" viewBox="0 0 29 24">
+                          <image id="Layer_6" data-name="Layer 6" width="29" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAYAAAAGXva8AAAABHNCSVQICAgIfAhkiAAAAwVJREFUSEutllmIzlEYh2e4sCT7nhJyI7Ile0bZLqSk7JLs61hCNLYsSVyQ0ggpZW1K4c4yGFuihEvU5GbsF7ayPo/OqX//+eb7fDNz6umc7/zPOb/zvuc97/kKK0o3FmQoDejrCUuhDzTJNCj0OdbyO9SF1FVwGi7D1/TcwhpEhzPwKNyGu2Gii8mf1CKK2v8rCCveHWZDOZTAl+ScTKJ9GbAf7gfhD2FBF85V4oaaMnAwrIEHsCWbqLueBZthBLzPpZLj+wG+94K58CaOzWRpMR8nwtg6Cjp9QVhLS5+mRZvTMR5GwRDQlQPrQXRV8Nod6ptwHZ5paWcaU2EKvA1CbajPQSkYILUpA5i0DrrCK2gLH6FE0a00RsNV2A0NYTrokpnwpBbCzZhzGBoHS19S94OdUKnoIxpeDUP7czCpBbUR/AIOwrc8TR0UrCyjvpCY65GVKVpO4zHsgXdhgO5dAZ7tXviep6ie01smh0thrmsNg2OK6kZ35scT4OVuDd4xz1OL87W0KCF6kbZXsRvs0ABFdaW7Wgb6Xneahbyr86AybCSZHJKpz4Qgfrf/B3SB12GN59QG1CQwoIrjPfXgTX2LwXPcALugB5x3d2CAWZLiekVBawXFXOu1M2cfCnMNoIdwBKqSyUGLdWk78H55xgZWDKRMaTCdh2MONpsZ+WeDqPFxHLynBUnRlvxeAh1Bd5jCPMtNDsyz9A8GnKE2OH2tjJeKtKgR60ctXQ3mS1OiEah4PLe0fjzT2O/voaCXtkN7WAQnobwmUS3VHR3CJtyMxXP7Hxcr2giuhA2PoZ4TRG/UJNqJD8sT5piXDaLkI520Nu0BN/YJ4nlPoD0jm6jRq+jK5Kp1bPuQRNFq7jUh6HsfAKO3vkpW0VYJUQOovkpOSxeiZCB5X2OJ2SefTSQj2j8DuvcUVAskA2Yt9Ib5UARmJv9UxchNR28Motgfs5Nv5zUwA42EabAPbrnzZHLQonGwPoi4gBNNXz8dm8XUpKi512CcDP4r9NG4B9vg38PxF1D54R+hPVr/AAAAAElFTkSuQmCC"/>
+                        </svg> 6p</span>
+                        <span class="p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1" height="39" viewBox="0 0 1 39">
+                          <rect id="Rectangle_6" data-name="Rectangle 6" width="1" height="39" fill="#c5b7a8"/>
+                        </svg></span>
+
+                        <span class="brown">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="24" viewBox="0 0 30 24">
+                            <image id="Layer_5" data-name="Layer 5" width="30" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAABHNCSVQICAgIfAhkiAAAAdxJREFUSEvllssrRVEUh+8lj0ge5TE3NzRA3YHCGANJGZmLQjIzoZQkisTIP2BCRndgJiKvvCLK4BaSQgjfT/vqON1z7nmIgVVfZ5/22vu31j57r32iazP9i5FIpBKiYDXr+xsd74YXnlkp/G3DXV9vogif4DIOpx5GluAzD91w7sE/lYsS6pXwNo0WUADprACHQ6iFs3TOLv1zSeEOnHY8TFSBzxHUwK4HfyeXBb/Cxcw0BQNw8ZvCIbS+DfWd8f8TLiTlYRiBqxDp+15q7epjqAp5nGb97upSBA9gHe5Mxhk84zBtWYEY7Xbzrop3D/kgX1ksiPA+A1fg2iKkQFR6k1ZPoxNUanOgDZYhAapcCb/C5Qzagmq4tAi5NSWkctwEKj6fFlRYGSlzL6YNqbLcDJt2YS2Fvl060yWxBz8iLMEeI2y/Gl9NJJk8tUnKYBXqTADpAlW/Y8ZxOnVMtBHsVmQEb02HdqXu4gbwejs5CucxSTbYs1WGY/AEQ5aItAoPDoGmWgFHYbflmqDzEXQbBbVAwpNGuC+oqts3dpvzT4VV7gZDZJzLWJ2cVthIzqMC4jan/jb0jUZDCOs/bQka/Qjrb7ILno1wcudrx8vsJyFVfPJRHVDl+iqZHx8dqLyvfxxDAAAAAElFTkSuQmCC"/>
+                          </svg> 2Ch</span>
+                                            
+                      
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+                        <image id="Layer_8" data-name="Layer 8" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAABDNJREFUSEull3mIVVUYwB1twZL2jWwVQSvChpoWUJukRTQ106y0ZFpJtLAmRW0noyIqMAcrtabEUAdaMK10GiYV0aJFS/8IrCmjRQUTxfbl9xvOHc7c7n33veaDH/fc+875vrN8y3lV3bom3Rn+KpwJH8G70Aq7i9RW5XQ4ie+/wc4CBRpeBGPhoND3B55zYQHsyBufNnwaHZ+HS+EXaIRp8GvBBE7k93NgNFwDh8P3MAteyRobG9boaugLbtuRof0Wz3Hwe4Hx5GcncXegB8+FMBncwQ5JDJ/Cl3fAs3oKpsNhsBSGQhNMhKKVx7rP42U+uBMr4DrYl3TQ8LHQGow+wXNmNPpQ2stgGKyEMSnjnvElQeEnPP+ILdM+Al6Gq8CFjUr6aPhxmAENMCU10FdX/gYMgddhPCTbdjrtr8KYL3k2gqvcFek5mPab4M49A/X+pmEHHA+nws8Zhv2ks7jyy+FO0GuVA+Ha8F3H6gVtcAe8F+k6mvaH0Acug2YN74Vt4FmUEgfZbxVckdHxZL7dC3fBX+DOONlE3LH34XO4QMPGmsb7wZ8lLHscHourddV54jkuAXXXwoao42u0r4c6fzR0BoCe/WOONsPD8/kJLoKvSxj2pxvAxKLDXQiJ0+np2luvYZ3hVhgOem4s/q4zGGI6jN7twHLEVHoj3AIvRQM20q5W8UgwSbg9bkMsA3lZC2ahEeAKypWz6bgZ1sGgaNDDtB/QsLG6BYxnz/m7qJMJRWNu7Vnwd7lW6afuL0AdHuP2MNbFtCSZKznDZ/l4T0q5zmTKexJ0sErkPjq73ReD/qFYTOoTw8fwshUOAbcodp7evH8KR4FJoLkSy/Q1gXTK046Pi4QrfRqyztrkYNYy9EyRTrJLEhvuiaaP4Qy4EkzssZgc9G5TpBnMZFJK1P1PXod0PR5MxxZI4vXb1EBjWX/wKK6GzzIUm7nq4ACwull4zGSdJOsG8gg9HoQ1YF5N1+HZfNNpvN5MCsoTpc/RsNDo/WZBHUnjE9LGswyb+JeD+fgFMOGnZSofXL3j54HRcBt4W/H8LZ86lHX8XPAWcnOYULuuvDuXtw+rS01Qmg4xx9aCoWZ8uzq31nygf7SFmZ7A0+R0PiyGutA317DjrLWGjlXpMbg/KIsflksnZco1QVgiv0n1O453U7Er91Jwu8bzVpyMNZN5CdDTG8FEsj9jAmY/r0X/caLQN165PtBQZNhxXhDcLivYB+BZJbeOjDnkfjIRGQ2boKYcw2ryBuG11/uzVcqY1mEqESdunrBo1JZrODFgiTQudaS3wbCyAhWJR6WzekvxqtxUqWENVIMFwxhXXgQvinkT0Em98vh8FMwRJb26aBXekx+C/qGjEaD3Wr89S9OlVckY1080qOF2+T8rjiekN1v2bgIvi+rbA6ZcPVyD/puYAx5Lh/wLrHXethrz638AAAAASUVORK5CYII="/>
+                      </svg> 
+                      <span class="p-4">                     
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="29" viewBox="0 0 37 29">
+                        <image id="Layer_9" data-name="Layer 9" width="37" height="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAdCAYAAAAtt6XDAAAABHNCSVQICAgIfAhkiAAAA/lJREFUWEe9l2uI1UUYh9tWdlfJO2YihqFGfhKiMBH8YomIl9REvNWKayFeSREpULoYFiZeMq9dVLBAK1NMxU+Kmmv4QSTFcEs000glvGuYPs86A+cc/ue6pwaenT3/eWfmNzPvvDNT8cjD1BZmwGvwVPj2f2Y36ewH+BgOV/CnBlZAXVBxnlwjy0wxTxWZ9C2WW3Y/YURJdf4N7XclfxR+hykaDoPv4Cq8DXvhNlQGw6QZyyUqyT7pm8LvBVGdyZfA83DSxj+BqbBalUFIf/Kf4O9CeyjRri/1LsEpeAn2wC1FbYFXQJ9yGWfDYtgHtXCmxA5zVXOpXJV34UcYAP+ArlOlqK0wEqaDs/YibIYOcAgmwK9lFNaMtt6Cd0KbS8nngUKdgJqkmdJW5euhCxwLwo6XQVgVbXwArobJlVHgdWgFp6E6mygr9IPPoDv8AmPhaBOENafuh+CKmBTn8t0Jv1uSN+QTpW1v2AhPwxlwKQ+UIKwFdZbDpFB3PvlCMCTElCYq+lR09Mw+X+DD59ATfoNa2F+EMJfF7a6gu6AgZywzpYn6htIRkE2UlRX0FfQCd8hk2FWAsHbYrAF3t7FvDqzMUi9N1LcYDYeZ4BRnSz0o2AB94E94A77PYf94EPQyuSfEm+F3tippoozmVswnysaeBHelge4K6LSGj8xkhNZuIFwDg/OmHAOwKE3UNj541BQiysqdwoiHhA4V5gzGpKAvwXhntPZMzTWjsV6aKCsMhVmwLM9oYrED0FmrQed1afSVbvA1PBcM68lHwbkC2m2SqPF0YBRuD+5Grzo3wB3m7OhzF8AY+ATsBjeGN4BcqWRRBtBV4Db3NjEXpkGMP3Z6FrRrDcY4xXuO+u2PHKpKEmXgdHe2AU9zhRgeHoNFoDMbkb0oHgydu6s9FbxEOgjrZFvKokUpyHjjUWHjE4OgOHB9axB4BTmRMRvGqC+CeOvWQtKMFSVKQZ+GRg2YCjJOFZN0dk8FZ9Xd/jr8ldGAoryNNF5dcu0+ndpdpQ+VKij2PZp/1oa2dpK7zJdThBUk6lUq6EM67A7QHzJHV8xsaauze2fTxxRmm3HW84oah7G7TEMFuWSpoypWTKq9M6Q7eHNIHWyaKAsGQ4zoOqyHtK+c7WE0RuZyJv10HbhBDLYO2muMsazxkpfpU9GPvAprfLGcalLa8vj5CI7AGDAAu5SVijI6O0sqttDkMeHW9nT/L9OzNO4qGHC9PrlCja8ZT3ydzjeYTugu8wbg1HrJL0dKfZzGN6PfboEPhmdgAXg9qtfAjt8DXxQmBXnIluPBmW9AUWzH0N/P5HWxY18ZHpoeFV49kp7d+TootdyZ0k1cofeh4QEXg/bySHf6vgAAAABJRU5ErkJggg=="/>
+                      </svg>            
+                    </span>          
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="28" viewBox="0 0 32 28">
+                        <image id="Layer_10" data-name="Layer 10" width="32" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAAABHNCSVQICAgIfAhkiAAAAylJREFUSEu9l2mojUEYx11kT5aEEIosn5RkSblkucpOfBBC2aJsUbYolOxLya5IlkjZl1CyfaDskrqXbBHh8oFsv5/m1XGc9XbveerXzJn3nWf+M+/M88zJ+1UuobWldTh0gCZQDT7CHTgDx+Fzgp69aRsIHaEWfIWncBH2wOv4PnlxAtrxwlwYApUSa/vTehdWw174AX1gNvRM0ecNz7bBplghsQK68eAI1AlOjlKegofwCepCdxgBLcM7CiiCBeH3e8qDcBJeQA1wUoMhP7xzk9JV8nm5SIAOr0A9cJlnwIXQIb7QqQO6UrF2mB+zwCVPZBNpXA5OUBGu2rtIwFl+9IJLMACKkziJbR7Djx1QAVYEUd/T9GvBc/dPK1DwMAU0ovIY3GhuonMZDB694ozah9lk2s1PuB/coK0VMJbKTrgKXSHJwUjovyqtblZPSKZWPkyyh6umgO1UxsN8cEa5sGEMcghuKOAYlX4wEvblYnTGaAP34ZUCDBL5YOBRVS6sKYM8gWIFHAiDT6dcn4vRGcNIeR0KFTCTilHNEFuQIwHLGGeeK66A5lQeQGXoEpSVpY4GOL8HRtYCBeRRuRaWxYQxuixHx/dS8MQVQZsoErr0xn0jmZHQellYa5zegJowBTbHJiMTi0exEDqB2as0rQrOzC+d4TKY2H7ECjBJnAiDGxUNy19KSYHR0ixpFnwEJqJn+o6/D3g8HNxwuTksU2loWISTJcFRX8rTkdN4AbZPhg1QEVaCqfdbCVU4EVP7qtB/IaWb8K8lEuBDo6IBStsF40ooYCP9poa+fzZdvJ9kAnzPHD8ndHBFnMnPLIREx80uST9nKgF2nABroDqcB1P38zQivIy6aoPA+6Kf0E9p/T9LJ8AOQ8Ed7Pf0MjoKbicR0Zh2g1l+eD6JcksqwZkIsL/521k0Ay+eOo7PnN6It4Kh/S0Y7bwFp7RMBeikPnhrNl9ou8FE9gEWhwG9H5rn+4MBLa1lI0BntWEdRPniFnVXJPo/YEb1xLxMO3J4IVsBkV/3gaekYWjwgukZXwvpbsb/aCupAJ00Ay8w/nWbBv6vyNp+A4lstw5wA19rAAAAAElFTkSuQmCC"/>
+                      </svg>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          <!-- Booking End -->
+
+
+          <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+          <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+          <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script src="https://kit.fontawesome.com/bedfdff818.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  </body>
+</html>
